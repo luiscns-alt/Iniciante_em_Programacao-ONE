@@ -11,6 +11,10 @@ exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
 function gerarNumeroAleatorio() {
     return parseInt(Math.random() * 10 + 1);
 }
+
 function verificarChute() {
-    console.log(numeroSecreto);
+    let chute = document.querySelector('input').value;
+    console.log(chute == numeroSecreto);
 }
+
+
